@@ -16,7 +16,6 @@ function App() {
                 </Container>
             </Navbar>
             
-            
             <div className="main-bg"></div>
         </div>
     );
