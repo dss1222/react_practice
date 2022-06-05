@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import {Button, Navbar, Container, Nav} from 'react-bootstrap';
 import './App.css';
 import data from './data.js';
+import {Routes, Route, Link} from 'react-router-dom';
 
 function App() {
 
@@ -10,6 +11,13 @@ function App() {
 
     return (
         <div className="App">
+
+            <Routes>
+                <Route path="/" element={<div>메인페이지임</div>} />
+                <Route path="/detail" element={<div>상세페이지임</div>} />
+            </Routes>
+            
+
             <Navbar bg="light" variant="light">
                 <Container>
                     <Navbar.Brand href="#home">Navbar</Navbar.Brand>
@@ -21,7 +29,6 @@ function App() {
             </Navbar>
 
             <div className="main-bg"></div>
-
             <div className="container">
                 <div className="row">
                     {
@@ -34,6 +41,7 @@ function App() {
                     }
                 </div>
             </div>
+            
 
         </div>
     );
