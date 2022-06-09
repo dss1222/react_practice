@@ -17,7 +17,6 @@ function Detail(props) {
                 </div>
                 <div className="col-md-6 mt-4">
                     <h4 className="pt-5">{찾은상품.title}</h4>
-
                     <p>{찾은상품.content}</p>
                     <p>{찾은상품.price}원</p>
 
